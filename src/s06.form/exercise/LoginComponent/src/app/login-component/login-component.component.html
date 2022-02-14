@@ -1,0 +1,28 @@
+<section class="vh-100" style="background-color: #508bfc;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card shadow-2-strong" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
+            <form [formGroup] ="form">
+              <h3 class="mb-5">Sign in</h3>
+              <div class="form-outline mb-4">
+                <label class="form-label" for="typeEmailX-2">Email</label>
+                <input formControlName='email' class="form-control form-control-lg"/>
+                <small *ngIf="form.get('email').invalid && form.get('email').touched" class="text-danger">
+                  email not require</small>
+              </div>
+
+              <div class="form-outline mb-4">
+                <label class="form-label" for="typeEmailX-2">Password</label>
+                <input formControlName='password' class="form-control form-control-lg"/>
+                <small *ngIf="form.get('password').invalid && form.get('password').touched" class="text-danger">
+                  password not require</small>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

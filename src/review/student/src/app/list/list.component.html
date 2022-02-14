@@ -1,0 +1,23 @@
+<div >
+  <br/>
+  <table >
+    <thead>
+    <tr>
+      <th>No</th>
+      <th>Id</th>
+      <th>name</th>
+      <th>gender</th>
+      <th>score</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let s of students;index as i">
+      <td>{{i + 1}}</td>
+      <td>{{s.id}}</td>
+      <td>{{s.name}}</td>
+      <td>{{s.gender}}</td>
+      <td>{{s.score}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

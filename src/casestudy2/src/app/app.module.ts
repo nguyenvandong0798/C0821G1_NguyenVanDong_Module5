@@ -4,9 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
-import { ContractComponent } from './contract/contract.component';
-import { ServiceComponent } from './service/service.component';
-import { CustomerComponent } from './customer/customer.component';
+import { ContractComponent } from './list-contract/contract.component';
+import { ServiceComponent } from './list-service/service.component';
+import { CustomerComponent } from './create-customer/customer.component';
+import { ListCustomerComponent } from './list-customer/list-customer.component';
+import { EditCustomerComponent } from './edit-customer/edit-customer.component';
+import { CreateContractComponent } from './create-contract/create-contract.component';
+import { CreateServiceComponent } from './create-service/create-service.component';
+import { EditServiceComponent } from './edit-service/edit-service.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +20,12 @@ import { CustomerComponent } from './customer/customer.component';
     HeaderComponent,
     ContractComponent,
     ServiceComponent,
-    CustomerComponent
+    CustomerComponent,
+    ListCustomerComponent,
+    EditCustomerComponent,
+    CreateContractComponent,
+    CreateServiceComponent,
+    EditServiceComponent
   ],
   imports: [
     BrowserModule
