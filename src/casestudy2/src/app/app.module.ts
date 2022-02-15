@@ -12,6 +12,7 @@ import { EditCustomerComponent } from './edit-customer/edit-customer.component';
 import { CreateContractComponent } from './create-contract/create-contract.component';
 import { CreateServiceComponent } from './create-service/create-service.component';
 import { EditServiceComponent } from './edit-service/edit-service.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,9 +28,10 @@ import { EditServiceComponent } from './edit-service/edit-service.component';
     CreateServiceComponent,
     EditServiceComponent
   ],
-  imports: [
-    BrowserModule
-  ],
+    imports: [
+        BrowserModule,
+        ReactiveFormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

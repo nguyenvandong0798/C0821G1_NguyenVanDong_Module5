@@ -19,6 +19,8 @@
                 <small *ngIf="form.get('password').invalid && form.get('password').touched" class="text-danger">
                   password not require</small>
               </div>
+              <button (click)="getLoginForm()" [disabled]="form.invalid" class="btn btn-primary btn-lg btn-block"
+                       type="submit">Login</button>
             </form>
           </div>
         </div>
