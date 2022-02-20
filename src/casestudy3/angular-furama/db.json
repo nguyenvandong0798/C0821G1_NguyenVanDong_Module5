@@ -1,0 +1,214 @@
+{
+  "customerList": [
+    {
+      "id": "1",
+      "codeId": "KH-001",
+      "name": "nguyen van dong",
+      "date": "09/09/1990",
+      "gender": "nam",
+      "code": "123456789",
+      "phone": "09012345678",
+      "email": "nguyenvandong@gmail.com",
+      "address": "quang nam",
+      "type": "Gold"
+    },
+    {
+      "id": "2",
+      "codeId": "KH-0002",
+      "name": "nguyen van phuong",
+      "date": "1990-02-18",
+      "gender": "nam",
+      "code": "123456789",
+      "phone": "09021456789",
+      "email": "nguyenvanphuong@gmail.com",
+      "address": "da nang",
+      "type": "Diamond"
+    },
+    {
+      "id": "3",
+      "codeId": "KH-0003",
+      "name": "nguyen thi huong",
+      "date": "2019-02-11",
+      "gender": "nu",
+      "code": "123456789",
+      "phone": "09043232192",
+      "email": "nguyenthihuong@gmail.com",
+      "address": "da nang",
+      "type": "Silver"
+    },
+    {
+      "id": "4",
+      "codeId": "KH-0004",
+      "name": "khach sky",
+      "date": "1998-02-10",
+      "gender": "nam",
+      "code": "123456756",
+      "phone": "09012346666",
+      "email": "khanh@gmail.com",
+      "address": "hai duong ",
+      "type": "Platinium"
+    },
+    {
+      "id": "6",
+      "codeId": "KH-0006",
+      "name": "nguyen van dong",
+      "date": "1999-02-04",
+      "gender": null,
+      "code": "090123456",
+      "phone": "09001244222",
+      "email": "nguyen@gmail.com",
+      "address": "quang nam",
+      "type": "Gold"
+    }
+  ],
+  "customerTypeList": [
+    {
+      "id": "01",
+      "name": "Diamond"
+    },
+    {
+      "id": "02",
+      "name": "Gold"
+    },
+    {
+      "id": "03",
+      "name": "Silver"
+    },
+    {
+      "id": "04",
+      "name": "member"
+    },
+    {
+      "id": "05",
+      "name": "Platinium"
+    }
+  ],
+  "contract": [
+    {
+      "id": "1",
+      "dateIn": "09-09-2020",
+      "dateOut": "09-09-2021",
+      "deposit": "1000",
+      "customerList": {
+        "id": "1",
+        "codeId": "KH-001",
+        "name": "nguyen van dong",
+        "date": "09-09-1990",
+        "gender": "nam",
+        "code": "123456789",
+        "phone": "09012345678",
+        "email": "nguyenvandong@gmail.com",
+        "address": "quang nam",
+        "type": "Gold"
+      }
+    },
+    {
+      "id": "2",
+      "dateIn": "09-09-2020",
+      "dateOut": "09-09-2021",
+      "deposit": "1000",
+      "customerList": {
+        "id": "2",
+        "codeId": "KH-0002",
+        "name": "nguyen van phuong",
+        "date": "1990-02-18",
+        "gender": "nam",
+        "code": "123456789",
+        "phone": "09021456789",
+        "email": "nguyenvanphuong@gmail.com",
+        "address": "da nang",
+        "type": "Diamond"
+      }
+    },
+    {
+      "id": "3",
+      "dateIn": "09-09-2020",
+      "dateOut": "09-09-2021",
+      "deposit": "1000",
+      "customerList": {
+        "id": "3",
+        "codeId": "KH-0003",
+        "name": "nguyen van lanh",
+        "date": "1990-02-18",
+        "gender": "nam",
+        "code": "123456789",
+        "phone": "09021456789",
+        "email": "vanlanh@gmail.com",
+        "address": "da nang",
+        "type": "Diamond"
+      }
+    },
+    {
+      "id": "4",
+      "dateIn": "2022-02-09",
+      "dateOut": "2022-02-20",
+      "deposit": 2000,
+      "customerList": {
+        "id": "3",
+        "codeId": "KH-0003",
+        "name": "nguyen thi huong",
+        "date": "2019-02-11",
+        "gender": "nu",
+        "code": "123456789",
+        "phone": "09043232192",
+        "email": "nguyenthihuong@gmail.com",
+        "address": "da nang",
+        "type": "Diamond"
+      }
+    },
+    {
+      "id": "5",
+      "dateIn": "2022-02-10",
+      "dateOut": "2022-02-26",
+      "deposit": "2500",
+      "customerList": {
+        "id": "5",
+        "codeId": "KH-0005",
+        "name": "dung troc",
+        "date": "1999-02-09",
+        "gender": "nam",
+        "code": "012345577",
+        "phone": "09022222222",
+        "email": "dung@gmail.com",
+        "address": "hai duong",
+        "type": "member"
+      }
+    },
+    {
+      "id": "6",
+      "dateIn": "2022-02-11",
+      "dateOut": "2022-02-25",
+      "deposit": "2500",
+      "customerList": {
+        "id": "1",
+        "codeId": "KH-001",
+        "name": "nguyen van dong",
+        "date": "09/09/1990",
+        "gender": "nam",
+        "code": "123456789",
+        "phone": "09012345678",
+        "email": "nguyenvandong@gmail.com",
+        "address": "quang nam",
+        "type": "Gold"
+      }
+    },
+    {
+      "id": "7",
+      "dateIn": "2022-02-09",
+      "dateOut": "2022-02-19",
+      "deposit": "2500",
+      "customerList": {
+        "id": "2",
+        "codeId": "KH-0002",
+        "name": "nguyen van phuong",
+        "date": "1990-02-18",
+        "gender": "nam",
+        "code": "123456789",
+        "phone": "09021456789",
+        "email": "nguyenvanphuong@gmail.com",
+        "address": "da nang",
+        "type": "Diamond"
+      }
+    }
+  ]
+}

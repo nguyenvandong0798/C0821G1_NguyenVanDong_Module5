@@ -1,0 +1,77 @@
+<!--form list-->
+<div class="container-fluid">
+  <div class="row">
+    <table class="table table-striped w-75 mx-auto">
+<div class="input-group">
+  <div class="form-outline">
+    <input type="search" id="form1" class="form-control"
+    name="name" [(ngModel)] = "name" (ngModelChange)="search()" placeholder="search"/>
+  </div>
+  <button type="button" class="btn btn-primary">
+    <i class="fas fa-search"></i>
+  </button>
+</div>
+    </table>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <table class="table table-striped w-75 mx-auto">
+      <thead class="thead-inverse">
+      <tr>
+        <th>ID-C</th>
+        <th>Name</th>
+        <th>Date</th>
+        <th>Code</th>
+        <th>Gender
+        <th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Type</th>
+        <th></th>
+        <th>More</th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let s of customerList  | paginate: {itemsPerPage:3,currentPage: p}  ">
+        <td>{{s.codeId}}</td>
+        <td>{{s.name}}</td>
+        <td>{{s.date}}</td>
+        <td>{{s.code}}</td>
+        <td>{{s.gender}}</td>
+        <td></td>
+        <td>{{s.phone}}</td>
+        <td>{{s.email}}</td>
+        <td>{{s.address}}</td>
+        <td>{{s.type}}</td>
+        <td>
+          <button type="submit" class="btn btn-danger" data-toggle="modal" data-target="#myModal">
+            <a routerLink="/delete/{{s.id}}"><i class="fas fa-trash"></i></a></button>
+        </td>
+        <td>
+          <button type="button" class="btn btn-warning">
+            <a routerLink="/detail/{{s.id}}"><i class="fas fa-info"></i></a></button>
+        </td>
+        <td>
+          <button type="button" class="btn btn-success">
+            <a routerLink="/update/{{s.id}}"><i class="fas fa-edit"></i></a></button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    <table class="table table-striped w-75 mx-auto">
+      <thead class="thead-inverse">
+      <tr>
+        <th><a routerLink="/create">create</a></th>
+      </tr>
+      </thead>
+    </table>
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    <!-- page select-->
+    <!-- Modal -->
+  </div>
+</div>
+<!--form list-->
